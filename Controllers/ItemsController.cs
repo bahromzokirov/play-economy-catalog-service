@@ -33,7 +33,7 @@ public class ItemsController : ControllerBase
 
         if (RequestCounter <= 2)
         {
-            Console.WriteLine("Request {requestCounter}: Delaying...}");
+            Console.WriteLine($"Request {RequestCounter}: Delaying...");
             await Task.Delay(TimeSpan.FromSeconds(10));
         }
 
